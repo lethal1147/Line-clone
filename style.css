@@ -1,0 +1,133 @@
+/* 
+GREY FOR HEADING : #1E1E1E
+GREY FOR TEXT : #777777
+BORDER : #d7d7d7
+WHITE : #FFF
+
+PRIMARY GREEN : #07B53B
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*****************************************************************/
+/* NAV BAR */
+/*****************************************************************/
+
+.desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem;
+    border: 1px solid #d7d7d7;
+    background-color: rgb(255, 255, 255, 0.9);
+}
+
+.line-icon {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.desktop-nav > ul {
+    display: flex;
+    gap: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.desktop-nav > ul > .active {
+    border-bottom: 3px solid black;
+}
+
+
+.language {
+    display: flex;
+}
+
+.lang-icon {
+    align-self: center;
+}
+
+/*****************************************************************/
+/* HERO SECTION */
+/*****************************************************************/
+
+.hero-section {
+    background-image: url(./img/main.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    /* background-position: center center; */
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.hero-container {
+    display: block;
+    padding-left: 9rem;
+    
+}
+
+.hero-container > h2,
+.hero-container > h3 {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.hero-container > h2 {
+    font-size: 7.5rem;
+    font-weight: 800;
+}
+
+.hero-container > h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+/*****************************************************************/
+/* DEFAULT SETUP */
+/*****************************************************************/
+
+ul {
+    list-style: none;
+}
+
+select {
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.2rem;
+}
+
+select option {
+    padding: 1rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
