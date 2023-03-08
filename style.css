@@ -34,7 +34,7 @@ html {
     background-color: rgb(255, 255, 255, 0.9);
 }
 
-.line-icon {
+.web-icon {
     display: flex;
     align-items: center;
     width: auto;
@@ -99,7 +99,19 @@ html {
     margin-bottom: 1rem;
 }
 
+.download-container {
+    display: flex;
+    gap: 1rem;
+}
 
+.line-icon {
+    fill: #fff;
+    align-self: center;
+}
+
+.apple,.app-store,.computer {
+    fill: #fff;
+}
 
 
 
