@@ -57,6 +57,10 @@ html {
     display: flex;
 }
 
+.language > select {
+    background-color: transparent;
+}
+
 .lang-icon {
     align-self: center;
 }
@@ -75,49 +79,151 @@ html {
     color: #fff;
     display: flex;
     align-items: center;
+    margin-bottom: 6rem;
 }
 
 .hero-container {
     display: block;
     padding-left: 9rem;
-    
+    max-width: 130rem;
 }
 
-.hero-container > h2,
-.hero-container > h3 {
+.hero-container > h1,
+.hero-container > h2 {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.hero-container > h2 {
+.hero-container > h1 {
     font-size: 7.5rem;
     font-weight: 800;
 }
 
-.hero-container > h3 {
+.hero-container > h2 {
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
 }
 
 .download-container {
     display: flex;
+    align-items: center;
     gap: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.platform {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.platform > li > div {
+    height: 60px;
+    width: 60px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.platform > li > div:hover,
+.platform > li > div:active {
+    background-color: #07B53B;
+    cursor: pointer;
 }
 
 .line-icon {
     fill: #fff;
-    align-self: center;
 }
 
 .apple,.app-store,.computer {
     fill: #fff;
 }
 
+/*****************************************************************/
+/* Life on line Section */
+/*****************************************************************/
 
+.life-section {
+    padding: 0 10rem 0;
+}
 
+.heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3.5rem;
+}
 
+.heading-container > h3 {
+    font-size: 4.5rem;
+    font-weight: 800;
+}
 
+.heading-container > p {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
 
+.first {
+    padding: 2.5rem 5.5rem 5.5rem;
+}
+
+.left1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    /* width: 50%; */
+    padding: 0 3rem 0;
+}
+
+.left1 > h4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.left1 > h5 {
+    color: #07B53B;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.left1 > div {
+    color: #777777;
+    font-size: 1.3rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.left1 > img {
+    width: 50px;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 10px;
+}
+
+.left1 > button {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,.15);
+    padding: 1rem;
+    width: 10rem;
+    font-size: 1rem;
+}
+
+.left1 > button:hover,
+.left1 > button:active {
+    background-color: #07B53B;
+    color: #fff;
+}
+
+.right1 > img {
+    /* position: relative; */
+    /* left: -90px; */
+    width: 140%;
+    height: 110%;
+}
 
 
 /*****************************************************************/
@@ -126,6 +232,10 @@ html {
 
 ul {
     list-style: none;
+}
+
+p {
+    color: #777777;
 }
 
 select {
@@ -142,4 +252,12 @@ select option {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+.grid-two-column {
+    display: grid;
+    justify-content: center;
+    /* width: 80%; */
+    grid-template-columns: repeat(2,1fr);
+    /* 1440px - 320px */
 }
