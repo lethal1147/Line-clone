@@ -1,2 +1,2 @@
 # Line-clone
-Cloning line web for education.
+Cloning line web for learning css & html.
